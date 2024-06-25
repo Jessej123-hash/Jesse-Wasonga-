@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barclays hotel reservtion</title>
+    <style>
+        body {
+            font-family: Arial,  sans-serif;
+            margin: 20px;
+
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+
+        }
+        input [type="text"],  input=[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+
+        }
+        input=[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%
+            background-colour: #007BFF;
+            colour: white;
+            border; none;
+            cursor; pointer;
+
+        }
+        input[type="submit"] {
+            background-color: #0056b3;
+
+        }
+</style>
+</head>
+<body>
+    <h1>add hotel reservation</h1> 
+    <form action="/add_reservation.php"  method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+
+        <label for="check_in_date">Check-in Date:</label>
+        <input type="date" id="check_in_date" name="check_in_date" required>
+
+
+        <label for="check_out_date">Check-out Date:</label>
+        <input type="date" id="check_out_date" name="check_out_date" required>
+
+
+        <label for="room_type">Room Type:</label>
+        <input type="text" id="room_type" name="room_type"  required>
+            
+            
+         <input type="submit" value="Add reservation">
+    </form>   
+</body>
+</html>     
+            
+            
+            
